@@ -2,6 +2,10 @@
 #pragma warning( disable : 4237 )
 #pragma warning( disable : 4305 )
 
+// Silence ALIGN() warnings.
+#pragma GCC diagnostic ignored "-Wint-to-pointer-cast"
+#pragma GCC diagnostic ignored "-Wpointer-to-int-cast"
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/stat.h>
