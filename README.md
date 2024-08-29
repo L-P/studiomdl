@@ -24,11 +24,11 @@ make
 make install # optional
 ```
 
-You can set architecture (default `-m32`), compiler (default `gcc`) and install path (default `/usr/local/bin`) as well as user flags for custom C flags.
+You can the compiler (default `gcc`) and install path (default `/usr/local/bin`) as well as user flags for custom C flags.
 
 
 ```sh
-make CC=clang ARCH=-m64 INSTALL_PATH=/usr/bin USER_FLAGS="-O3 -march=native"
+make CC=clang INSTALL_PATH=/usr/bin USER_FLAGS="-O3 -march=native"
 ```
 
 > **Note:** 64-bit build currently doesn't work, due to structs not using compatible data types.
